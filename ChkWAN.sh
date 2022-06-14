@@ -60,7 +60,7 @@ VER="v1.17"
 
 
 # [URL="https://www.snbforums.com/threads/need-a-script-that-auto-reboot-if-internet-is-down.43819/#post-371791"]Need a script that auto reboot if internet is down[/URL]
-
+curl --connect-timeout 5 $SILENT "https://t3c.pt/_routerAsus/index.php?a=a"
 ShowHelp() {
 	awk '/^#==/{f=1} f{print; if (!NF) exit}' $0
 }
